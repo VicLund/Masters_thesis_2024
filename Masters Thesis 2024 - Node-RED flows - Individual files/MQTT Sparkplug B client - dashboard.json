@@ -1,0 +1,739 @@
+[
+    {
+        "id": "a98864514c44b2a7",
+        "type": "tab",
+        "label": "MQTT Sparkplug B client - dashboard",
+        "disabled": false,
+        "info": "Dashboard for testing the OPC UA \r\nto/from MQTT Sparkplug B system \r\nfunctionality",
+        "env": []
+    },
+    {
+        "id": "6394097fd0ff9449",
+        "type": "group",
+        "z": "a98864514c44b2a7",
+        "name": "Battery Widgets",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "af7c7c52199bb245",
+            "786b1f7bf2b10506",
+            "73b8797bd96283fc",
+            "ee1a53d379f316a4"
+        ],
+        "x": 594,
+        "y": 79,
+        "w": 552,
+        "h": 202
+    },
+    {
+        "id": "13f19973f2bdcaa6",
+        "type": "group",
+        "z": "a98864514c44b2a7",
+        "name": "CCS1 Widgets",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "91db19551cdb08d0",
+            "c788ef659fe7787e",
+            "f8c78148e31f3b39",
+            "54007c7793abb78e",
+            "4420bd748422d745",
+            "fb91df8383f0ae44",
+            "5eda05d33c69c719"
+        ],
+        "x": 594,
+        "y": 319,
+        "w": 592,
+        "h": 262
+    },
+    {
+        "id": "2346f33a0da4b663",
+        "type": "group",
+        "z": "a98864514c44b2a7",
+        "name": "CCS2 Widgets",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "8327a18b06352f6d",
+            "979da97d1af360df",
+            "cbf95f8f088858ec",
+            "da34e073f96ad63e",
+            "140dd6814b1cee98",
+            "f3c1835b381824bf",
+            "37ad2dccb1457e1f"
+        ],
+        "x": 594,
+        "y": 619,
+        "w": 592,
+        "h": 262
+    },
+    {
+        "id": "458fe340dbb283a4",
+        "type": "mqtt sparkplug in",
+        "z": "a98864514c44b2a7",
+        "name": "Subscribe",
+        "topic": "spBv1.0/Master/#",
+        "qos": "1",
+        "broker": "0d831bd9ba588536",
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "660a71dbf4ba2c77"
+            ]
+        ]
+    },
+    {
+        "id": "660a71dbf4ba2c77",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "name": "Split Payload",
+        "func": "// Iterate through the metrics array\nfor (const metric of msg.payload.metrics) {\n    // Extract name and value\n    const { name, value } = metric;\n\n    // Determine the output based on the name\n    switch (name) {\n        case \"Battery/CurrentTemp\":\n            const roundedValue = Math.round(value * 100) / 100; // Round to 2 decimal places\n            node.send([{ payload: roundedValue }, null, null, null, null, null, null, null, null, null, null]);\n            break;\n        case \"Battery/MaxTemp\":\n            node.send([null, { payload: value }, null, null, null, null, null, null, null, null, null]);\n            break;\n        case \"Battery/W-Restart\":\n            node.send([null, null, { payload: value }, null, null, null, null, null, null, null, null]);\n            break;\n        case \"CCS1/ChargingPower\":\n            node.send([null, null, null, { payload: value }, null, null, null, null, null, null, null]);\n            break;\n        case \"CCS1/ConnectionStatus\":\n            node.send([null, null, null, null, { payload: value }, null, null, null, null, null, null]);\n            break;\n        case \"CCS1/W-RemoteStop\":\n            node.send([null, null, null, null, null, { payload: value }, null, null, null, null, null]);\n            break;\n        case \"CCS1/W-Voltage\":\n            node.send([null, null, null, null, null, null, { payload: value }, null, null, null, null]);\n            break;\n        case \"CCS2/ChargingPower\":\n            node.send([null, null, null, null, null, null, null, { payload: value }, null, null, null]);\n            break;\n        case \"CCS2/ConnectionStatus\":\n            node.send([null, null, null, null, null, null, null, null, { payload: value }, null, null]);\n            break;\n        case \"CCS2/W-RemoteStop\":\n            node.send([null, null, null, null, null, null, null, null, null, { payload: value }, null]);\n            break;\n        case \"CCS2/W-Voltage\":\n            node.send([null, null, null, null, null, null, null, null, null, null, { payload: value }]);\n            break;\n        // Add more cases as needed for other metrics\n        default:\n            // Handle any other cases if necessary\n            break;\n    }\n}\n//return null;",
+        "outputs": 11,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "73b8797bd96283fc"
+            ],
+            [
+                "786b1f7bf2b10506"
+            ],
+            [
+                "af7c7c52199bb245"
+            ],
+            [
+                "54007c7793abb78e"
+            ],
+            [
+                "5eda05d33c69c719"
+            ],
+            [
+                "91db19551cdb08d0"
+            ],
+            [
+                "c788ef659fe7787e"
+            ],
+            [
+                "da34e073f96ad63e"
+            ],
+            [
+                "37ad2dccb1457e1f"
+            ],
+            [
+                "979da97d1af360df"
+            ],
+            [
+                "cbf95f8f088858ec"
+            ]
+        ]
+    },
+    {
+        "id": "91db19551cdb08d0",
+        "type": "ui-switch",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "name": "CCS1/W.RemoteStop",
+        "label": "Remote Stop (Writable)",
+        "group": "9719cb0519d49944",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 720,
+        "y": 480,
+        "wires": [
+            [
+                "4420bd748422d745"
+            ]
+        ]
+    },
+    {
+        "id": "af7c7c52199bb245",
+        "type": "ui-switch",
+        "z": "a98864514c44b2a7",
+        "g": "6394097fd0ff9449",
+        "name": "Battery/W.Restart",
+        "label": "Restart (Writable)",
+        "group": "25d627080288e59d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 710,
+        "y": 240,
+        "wires": [
+            [
+                "ee1a53d379f316a4"
+            ]
+        ]
+    },
+    {
+        "id": "c788ef659fe7787e",
+        "type": "ui-text-input",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "group": "9719cb0519d49944",
+        "name": "CCS1/W.Voltage",
+        "label": "Voltage (Writable)",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 710,
+        "y": 540,
+        "wires": [
+            [
+                "fb91df8383f0ae44"
+            ]
+        ]
+    },
+    {
+        "id": "f8c78148e31f3b39",
+        "type": "ui-text",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "group": "9719cb0519d49944",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "CCS1/ConnectionStatus",
+        "label": "Connection Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "className": "",
+        "x": 990,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "786b1f7bf2b10506",
+        "type": "ui-text",
+        "z": "a98864514c44b2a7",
+        "g": "6394097fd0ff9449",
+        "group": "25d627080288e59d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Battery/MaxTemp",
+        "label": "Maximum Temperature: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "className": "",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "54007c7793abb78e",
+        "type": "ui-gauge",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "name": "CCS1/ChargingPower",
+        "group": "9719cb0519d49944",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Charging Power",
+        "units": "kW",
+        "icon": "EvStation",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#70d6d6"
+            }
+        ],
+        "min": 0,
+        "max": "360",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 720,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "73b8797bd96283fc",
+        "type": "ui-gauge",
+        "z": "a98864514c44b2a7",
+        "g": "6394097fd0ff9449",
+        "name": "Battery/CurrentTemp",
+        "group": "25d627080288e59d",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Current Temperature",
+        "units": "C",
+        "icon": "Thermometer",
+        "prefix": "",
+        "suffix": "°",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "15",
+                "color": "#ffc800"
+            },
+            {
+                "from": "35",
+                "color": "#d81212"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 720,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8327a18b06352f6d",
+        "type": "ui-text",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "group": "cf68e1fc622b45fc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "CCS2/ConnectionStatus",
+        "label": "Connection Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "className": "",
+        "x": 990,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "979da97d1af360df",
+        "type": "ui-switch",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "name": "CCS2/W.RemoteStop",
+        "label": "Remote Stop (Writable)",
+        "group": "cf68e1fc622b45fc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "140dd6814b1cee98"
+            ]
+        ]
+    },
+    {
+        "id": "cbf95f8f088858ec",
+        "type": "ui-text-input",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "group": "cf68e1fc622b45fc",
+        "name": "CCS2/W.Voltage",
+        "label": "Voltage (Writable)",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "number",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": false,
+        "className": "",
+        "x": 710,
+        "y": 840,
+        "wires": [
+            [
+                "f3c1835b381824bf"
+            ]
+        ]
+    },
+    {
+        "id": "da34e073f96ad63e",
+        "type": "ui-gauge",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "name": "CCS2/ChargingPower",
+        "group": "cf68e1fc622b45fc",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Charging Power",
+        "units": "kW",
+        "icon": "EvStation",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#70d6d6"
+            }
+        ],
+        "min": 0,
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 720,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "4420bd748422d745",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "name": "Write \"W-RemoteStop\" to OPC UA",
+        "func": "var value = msg.payload;\n\nmsg.payload = {\n    \"metrics\": [\n        {\n            \"name\": \"CCS1/W-RemoteStop\",\n            \"value\": value,\n            \"type\": \"Boolean\"\n        }\n    ]\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            [
+                "742c58f1883a0fc4"
+            ]
+        ]
+    },
+    {
+        "id": "140dd6814b1cee98",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "name": "Write \"W-RemoteStop\" to OPC UA",
+        "func": "var value = msg.payload;\n\nmsg.payload = {\n    \"metrics\": [\n        {\n            \"name\": \"CCS2/W-RemoteStop\",\n            \"value\": value,\n            \"type\": \"Boolean\"\n        }\n    ]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 780,
+        "wires": [
+            [
+                "742c58f1883a0fc4"
+            ]
+        ]
+    },
+    {
+        "id": "fb91df8383f0ae44",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "name": "Write \"W-Voltage\" to OPC UA",
+        "func": "var value = parseInt(msg.payload);\n\nmsg.payload = {\n    \"metrics\": [\n        {\n            \"name\": \"CCS1/W-Voltage\",\n            \"value\": value,\n            \"type\": \"Int32\"\n        }\n    ]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 540,
+        "wires": [
+            [
+                "742c58f1883a0fc4"
+            ]
+        ]
+    },
+    {
+        "id": "f3c1835b381824bf",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "name": "Write \"W-Voltage\" to OPC UA",
+        "func": "var value = parseInt(msg.payload);\n\nmsg.payload = {\n    \"metrics\": [\n        {\n            \"name\": \"CCS2/W-Voltage\",\n            \"value\": value,\n            \"type\": \"Int32\"\n        }\n    ]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 840,
+        "wires": [
+            [
+                "742c58f1883a0fc4"
+            ]
+        ]
+    },
+    {
+        "id": "37ad2dccb1457e1f",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "2346f33a0da4b663",
+        "name": "Connection Status States",
+        "func": "// Assume msg is the input object containing payload\nvar value = msg.payload;\n\n// Switch-case statement to check the value\nswitch (value) {\n    case 1:\n        msg.payload = \"Available\";\n        break;\n    case 2:\n        msg.payload = \"Preparing\";\n        break;\n    case 3:\n        msg.payload = \"Charging\";\n        break;\n    case 4:\n        msg.payload = \"SuspendedEVSE\";\n        break;\n    case 5:\n        msg.payload = \"SuspendedEV\";\n        break;\n    case 6:\n        msg.payload = \"Finishing\";\n        break;\n    case 7:\n        msg.payload = \"Reserved\";\n        break;\n    case 8:\n        msg.payload = \"Unavailable\";\n        break;\n    case 9:\n        msg.payload = \"Faulted\";\n        break;\n    default:\n        msg.payload = \"Error reading status\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 720,
+        "wires": [
+            [
+                "8327a18b06352f6d"
+            ]
+        ]
+    },
+    {
+        "id": "5eda05d33c69c719",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "13f19973f2bdcaa6",
+        "name": "Connection Status States",
+        "func": "// Assume msg is the input object containing payload\nvar value = msg.payload;\n\n// Switch-case statement to check the value\nswitch (value) {\n    case 1:\n        msg.payload = \"Available\";\n        break;\n    case 2:\n        msg.payload = \"Preparing\";\n        break;\n    case 3:\n        msg.payload = \"Charging\";\n        break;\n    case 4:\n        msg.payload = \"SuspendedEVSE\";\n        break;\n    case 5:\n        msg.payload = \"SuspendedEV\";\n        break;\n    case 6:\n        msg.payload = \"Finishing\";\n        break;\n    case 7:\n        msg.payload = \"Reserved\";\n        break;\n    case 8:\n        msg.payload = \"Unavailable\";\n        break;\n    case 9:\n        msg.payload = \"Faulted\";\n        break;\n    default:\n        msg.payload = \"Error reading status\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "f8c78148e31f3b39"
+            ]
+        ]
+    },
+    {
+        "id": "ee1a53d379f316a4",
+        "type": "function",
+        "z": "a98864514c44b2a7",
+        "g": "6394097fd0ff9449",
+        "name": "Write \"W-Restart\" to OPC UA",
+        "func": "var value = msg.payload;\n\nmsg.payload = {\n    \"metrics\": [\n        {\n            \"name\": \"Battery/W-Restart\",\n            \"value\": value,\n            \"type\": \"Boolean\"\n        }\n    ]\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 240,
+        "wires": [
+            [
+                "742c58f1883a0fc4"
+            ]
+        ]
+    },
+    {
+        "id": "742c58f1883a0fc4",
+        "type": "mqtt sparkplug out",
+        "z": "a98864514c44b2a7",
+        "name": "Publisher",
+        "topic": "spBv1.0/Master/DCMD/OPCUA_2_MQTT/My Device",
+        "qos": "1",
+        "retain": "true",
+        "broker": "0d831bd9ba588536",
+        "x": 1360,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "0d831bd9ba588536",
+        "type": "mqtt-sparkplug-broker",
+        "name": "Ignition - Local Host",
+        "deviceGroup": "Master",
+        "eonName": "OPCUA_2_MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "enableStoreForward": false,
+        "compressAlgorithm": "",
+        "aliasMetrics": false,
+        "manualEoNBirth": false,
+        "primaryScada": ""
+    },
+    {
+        "id": "9719cb0519d49944",
+        "type": "ui-group",
+        "name": "CCS1",
+        "page": "7f3b761ffd73047e",
+        "width": "3",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "25d627080288e59d",
+        "type": "ui-group",
+        "name": "Battery",
+        "page": "7f3b761ffd73047e",
+        "width": "3",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "cf68e1fc622b45fc",
+        "type": "ui-group",
+        "name": "CCS2",
+        "page": "7f3b761ffd73047e",
+        "width": "3",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7f3b761ffd73047e",
+        "type": "ui-page",
+        "name": "MQTT Sparkplug Visuals",
+        "ui": "47dc05dc09e99aff",
+        "path": "/mqttspkb",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "37d162d532c6c14f",
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "47dc05dc09e99aff",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "37d162d532c6c14f",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#2181a6",
+            "primary": "#2181a6",
+            "bgPage": "#eeeeee",
+            "groupBg": "#eeeeee",
+            "groupOutline": "#000000"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]

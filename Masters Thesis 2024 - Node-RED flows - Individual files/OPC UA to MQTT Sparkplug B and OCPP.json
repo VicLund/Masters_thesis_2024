@@ -1,0 +1,1189 @@
+[
+    {
+        "id": "c92713e1582bbb33",
+        "type": "tab",
+        "label": "OPC UA to MQTT Sparkplug B and OCPP",
+        "disabled": false,
+        "info": "Converting OPC UA data to and from MQTT Sparkplug \r\nB and OCPP messages",
+        "env": []
+    },
+    {
+        "id": "a9e606ed69b38035",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "name": "",
+        "style": {
+            "fill": "#ffffff",
+            "label": true
+        },
+        "nodes": [
+            "cb0f23837cd65537",
+            "816d72a882cbc9ac",
+            "828a4c39fe422795",
+            "28bb037646a83e5e",
+            "b15a799bd2d72337",
+            "fd1d56b673868a4b",
+            "a9f9c196e86bd4f0",
+            "689b61a15ded4790",
+            "bd770928fc61761c",
+            "015c9c09b69eb0d1",
+            "5333278a79f0deb9"
+        ],
+        "x": 28,
+        "y": 73,
+        "w": 1924,
+        "h": 840
+    },
+    {
+        "id": "828a4c39fe422795",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Set topics p1",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#ffcf3f"
+        },
+        "nodes": [
+            "086bd4d1a656d6f4",
+            "bcdec503e85d46d2",
+            "54bc4a2bddf20611",
+            "03bded289bb70aaf"
+        ],
+        "x": 54,
+        "y": 99,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "28bb037646a83e5e",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Publish to topics p1",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#ffcf3f"
+        },
+        "nodes": [
+            "e63787461ce0c357",
+            "f3540acc79f3e8da",
+            "b2dab6b381323613"
+        ],
+        "x": 54,
+        "y": 399,
+        "w": 432,
+        "h": 142
+    },
+    {
+        "id": "b15a799bd2d72337",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Delete subscription",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#ffcf3f"
+        },
+        "nodes": [
+            "7641aff4c36f5f3a"
+        ],
+        "x": 54,
+        "y": 279,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "fd1d56b673868a4b",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "OCPP Charging Station",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#3f93cf"
+        },
+        "nodes": [
+            "36b5f3452dfa1ff8",
+            "6d1dca5fef7737b9",
+            "48cfe3df608b6800",
+            "3fcbba68bb81cfd5",
+            "cd2504b722e357cb",
+            "5231da131303c0f4",
+            "1662e82cc7ce69fe",
+            "802d639639c59745",
+            "bbf052edb9e01dad",
+            "61d35eb3b4e3e522"
+        ],
+        "x": 64,
+        "y": 573,
+        "w": 1608,
+        "h": 314
+    },
+    {
+        "id": "a9f9c196e86bd4f0",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "OPC UA to OCPP",
+        "style": {
+            "stroke": "#3f93cf",
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4170e27612684cde"
+        ],
+        "x": 1054,
+        "y": 299,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "689b61a15ded4790",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Set topics p2",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "label-position": "n",
+            "stroke": "#9363b7"
+        },
+        "nodes": [
+            "e85edb7a24caf34b",
+            "0dbc3aa6500ee875"
+        ],
+        "x": 994,
+        "y": 159,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "bd770928fc61761c",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Publish to topics p2",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "label-position": "n",
+            "stroke": "#9363b7"
+        },
+        "nodes": [
+            "42e840016788e4df",
+            "eb569a6a2097fc8e"
+        ],
+        "x": 994,
+        "y": 399,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "015c9c09b69eb0d1",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "Write to OPC UA from MQTT Broker",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "label-position": "n",
+            "stroke": "#9363b7"
+        },
+        "nodes": [
+            "c4c03b71f1d575d3",
+            "d152235f5bd3fd6b"
+        ],
+        "x": 1674,
+        "y": 279,
+        "w": 252,
+        "h": 122
+    },
+    {
+        "id": "bbf052edb9e01dad",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Set variables",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "80c11472234346d6",
+            "11beb8dd4ffa528c",
+            "0d562c1fd1118437",
+            "e7aee1f2156d3788",
+            "4cc2f7c4e0fce314",
+            "ece7bb78cdcb41ae",
+            "3825b39eb017c98f"
+        ],
+        "x": 894,
+        "y": 739,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "61d35eb3b4e3e522",
+        "type": "group",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Get variables",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f0dde1f50cf08a7f",
+            "37e1b293a9980d98",
+            "4b21a0b31f2042bd"
+        ],
+        "x": 894,
+        "y": 599,
+        "w": 462,
+        "h": 82
+    },
+    {
+        "id": "086bd4d1a656d6f4",
+        "type": "OpcUa-Browser",
+        "z": "c92713e1582bbb33",
+        "g": "828a4c39fe422795",
+        "endpoint": "862bd909ecdf60fb",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=7;s=simData",
+        "items": [],
+        "name": "Browser",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "03bded289bb70aaf"
+            ]
+        ]
+    },
+    {
+        "id": "bcdec503e85d46d2",
+        "type": "inject",
+        "z": "c92713e1582bbb33",
+        "g": "828a4c39fe422795",
+        "name": "Set tags",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "multiple",
+        "payload": "",
+        "payloadType": "str",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "086bd4d1a656d6f4",
+                "54bc4a2bddf20611"
+            ]
+        ]
+    },
+    {
+        "id": "cb0f23837cd65537",
+        "type": "OpcUa-Client",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "endpoint": "862bd909ecdf60fb",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "1",
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": "500",
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "816d72a882cbc9ac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e63787461ce0c357",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "28bb037646a83e5e",
+        "name": "Get_NodeIDs",
+        "func": "msg.topic = \"multiple\";\nmsg.payload = flow.get('NODEIDs')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "cb0f23837cd65537"
+            ]
+        ]
+    },
+    {
+        "id": "f3540acc79f3e8da",
+        "type": "inject",
+        "z": "c92713e1582bbb33",
+        "g": "28bb037646a83e5e",
+        "name": "Subscribe to tags",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "e63787461ce0c357",
+                "b2dab6b381323613"
+            ]
+        ]
+    },
+    {
+        "id": "54bc4a2bddf20611",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "828a4c39fe422795",
+        "name": "SUB Topics - F",
+        "func": "flow.set('SUB_topics', false);\nflow.set('definitions', {})\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03bded289bb70aaf",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "828a4c39fe422795",
+        "name": "Set_NodeIDs",
+        "func": "msg.topic = \"multiple\";\n\nfunction extractNodeIds(obj) {\n    var formattedObjects = [];\n\n    for (var i = 0; i < obj.length; i++) {\n        var item = obj[i].item;\n\n        if (item && item.value !== undefined && item.nodeId) {\n            //formattedObjects.push({ nodeId: item.nodeId, value: item.value, browseName: item.browseName.name });\n            formattedObjects.push({ nodeId: item.nodeId });\n        }\n    }\n\n    return formattedObjects;\n}\n\nif (msg.payload && Array.isArray(msg.payload)) {\n    var formattedObjects = extractNodeIds(msg.payload);\n\n    if (formattedObjects.length > 0) {\n        msg.payload = formattedObjects;\n        flow.set('NODEIDs', formattedObjects);\n        return msg;\n    }\n} else {\n    msg.payload = \"Invalid payload format\";\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "cb0f23837cd65537"
+            ]
+        ]
+    },
+    {
+        "id": "b2dab6b381323613",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "28bb037646a83e5e",
+        "name": "SUB Topics - T",
+        "func": "flow.set('SUB_topics', true);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6eb8d3a032bd0fc",
+        "type": "catch",
+        "z": "c92713e1582bbb33",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "da7c84687a56e6df"
+            ]
+        ]
+    },
+    {
+        "id": "da7c84687a56e6df",
+        "type": "debug",
+        "z": "c92713e1582bbb33",
+        "name": "Error catch",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "7641aff4c36f5f3a",
+        "type": "inject",
+        "z": "c92713e1582bbb33",
+        "g": "b15a799bd2d72337",
+        "name": "Delete subscription",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "currentSession",
+        "payload": "{\"action\": \"deletesubscription\"}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "cb0f23837cd65537"
+            ]
+        ]
+    },
+    {
+        "id": "816d72a882cbc9ac",
+        "type": "switch",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "SUB or SET",
+        "property": "SUB_topics",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 320,
+        "wires": [
+            [
+                "e85edb7a24caf34b"
+            ],
+            [
+                "4170e27612684cde",
+                "42e840016788e4df"
+            ]
+        ]
+    },
+    {
+        "id": "36b5f3452dfa1ff8",
+        "type": "CS",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Sta1",
+        "csms": "23d726e457d80462",
+        "cbId": "Sta1",
+        "ws_rt_minimum": "2",
+        "ws_rt_repeat": "2",
+        "ws_rt_rnd_range": "2",
+        "auto_connect": true,
+        "ocpp_logging": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 780,
+        "wires": [
+            [
+                "6d1dca5fef7737b9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6d1dca5fef7737b9",
+        "type": "switch",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Topic switch",
+        "property": "$split(msg.topic, '/')[-1] \t",
+        "propertyType": "jsonata",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Request",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Response",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Error",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 780,
+        "wires": [
+            [
+                "48cfe3df608b6800"
+            ],
+            [
+                "5231da131303c0f4"
+            ],
+            [
+                "1662e82cc7ce69fe"
+            ],
+            [
+                "802d639639c59745"
+            ]
+        ]
+    },
+    {
+        "id": "48cfe3df608b6800",
+        "type": "change",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "CSMS:Req",
+        "rules": [
+            {
+                "t": "set",
+                "p": "target",
+                "pt": "msg",
+                "to": "msg.ocpp.cbId & \":REQ:\" & msg.ocpp.command",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 720,
+        "wires": [
+            [
+                "cd2504b722e357cb"
+            ]
+        ],
+        "info": "$join([msg.topic,msg.ocpp.command],\":\")"
+    },
+    {
+        "id": "3fcbba68bb81cfd5",
+        "type": "link in",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Sta1 input",
+        "links": [
+            "064e79f80d6aa2e0",
+            "4b21a0b31f2042bd",
+            "e7aee1f2156d3788"
+        ],
+        "x": 105,
+        "y": 780,
+        "wires": [
+            [
+                "36b5f3452dfa1ff8"
+            ]
+        ]
+    },
+    {
+        "id": "cd2504b722e357cb",
+        "type": "switch",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Command switch",
+        "property": "target",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Sta1:REQ:GetVariables",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Sta1:REQ:SetVariables",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 720,
+        "wires": [
+            [
+                "37e1b293a9980d98"
+            ],
+            [
+                "0d562c1fd1118437"
+            ]
+        ]
+    },
+    {
+        "id": "5231da131303c0f4",
+        "type": "debug",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "CSMS:Res",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1662e82cc7ce69fe",
+        "type": "debug",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "CSMS Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "802d639639c59745",
+        "type": "debug",
+        "z": "c92713e1582bbb33",
+        "g": "fd1d56b673868a4b",
+        "name": "Other",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "80c11472234346d6",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "SetVariableResult",
+        "func": "// Retrieve the set ID and the array of items to process from the message\nlet setId = msg.setId;\nlet itemArray = msg.itemArray;\n\n// Retrieve the status array for the given set ID from the flow context\nlet attrStatus = flow.get(`VarStatus::${setId}`);\n\n// Determine the overall status; if all are \"Accepted\", \n// set status to \"Accepted\", otherwise \"Rejected\"\nlet status = (attrStatus == \"Accepted\") ? attrStatus : \"Rejected\";\n\n// Clear the status array in the flow context to free up memory\nflow.set(`VarStatus::${setId}`, undefined);\n\n// Iterate over each item in the item array\nitemArray.forEach(function(item) {\n    // Create a result object for each variable\n    let varRes = {\n        attributeStatus: attrStatus[item.itemId],      // Status of the individual attribute\n        component: {\n            name: item.component                        // Component name           \n        },\n        variable: {\n            name: item.variable                         // Variable name \n        }\n    }\n\n    // If the status is \"InvalidValue\", add additional status information\n    if (attrStatus == \"InvalidValue\") {\n        varRes.attributeStatusInfo = attrStatus;\n    }\n\n    // Push the result object into the setVariableResult array in the message payload\n    msg.payload.data.setVariableResult.push(varRes);\n});\n\n// Return the modified message to continue in the flow\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 780,
+        "wires": [
+            [
+                "e7aee1f2156d3788"
+            ]
+        ]
+    },
+    {
+        "id": "11beb8dd4ffa528c",
+        "type": "delay",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1160,
+        "y": 780,
+        "wires": [
+            [
+                "80c11472234346d6"
+            ]
+        ]
+    },
+    {
+        "id": "0d562c1fd1118437",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "SetVariables",
+        "func": "// We need to clone this message since we need to\n// pass back the original msg.. it contains info on the link\n// to return to\n\n// Clone the incoming message to keep the original unchanged\nlet setVarArray = RED.util.cloneMessage(msg);\n\n// Set up the payload of the original message with initial values\nmsg.payload = {\n    msgType: 3,\n    data: {\n        setVariableResult: []\n    }\n}\n\n// Generate a unique ID for the set operation\nlet setId = RED.util.generateId();\n\n// Initialize item ID and array to store items\nlet itemId = 0;\nlet itemArray = [];\n\n// Iterate over each variable in the cloned message's setVariableData\nsetVarArray.payload.data.setVariableData.forEach(function(setVar) {\n    // Create a new object for each variable to set\n    let x = {\n        payload: {\n            setId,                               // Set ID for tracking\n            itemId,                              // Unique item ID\n            component: setVar.component.name,    // Component name\n            variable: setVar.variable.name,      // Variable name\n            value: setVar.attributeValue,        // Value to set\n            varType: setVar.attributeType || \"Actual\"  // Attribute type, default to \"Actual\"\n        }\n    }\n    // Add the payload of this object to the itemArray\n    itemArray.push(x.payload);\n    // Send this object as the second output from the node\n    node.send([null, x]);\n    // Increment the item ID for the next variable\n    itemId++;\n});\n\n// Assign the set ID and item array to the original message\nmsg.setId = setId;\nmsg.itemArray = itemArray;\n\n// Return the modified original message as the first output\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 800,
+        "wires": [
+            [
+                "11beb8dd4ffa528c"
+            ],
+            [
+                "4cc2f7c4e0fce314"
+            ]
+        ]
+    },
+    {
+        "id": "e7aee1f2156d3788",
+        "type": "link out",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "SetVariables out",
+        "mode": "link",
+        "links": [
+            "3fcbba68bb81cfd5"
+        ],
+        "x": 1495,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "4cc2f7c4e0fce314",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "Accepted",
+        "func": "// Generate a unique key for storing variable status in the flow context\nlet setVarId = `VarStatus::${msg.payload.setId}`;\n\n// Retrieve the current status array for the given set ID from the flow context\n// If it doesn't exist, initialize it as an empty array\nlet varStatus = flow.get(setVarId) || [];\n\n// Determine the status based on the type of the value\n// If the value is a string, status is \"Accepted\", otherwise it's \"InvalidValue\"\nlet status = typeof(msg.payload.value) == 'string' ? \"Accepted\" : \"InvalidValue\";\n\n// Update the status for the specific item ID in the varStatus array\nvarStatus[msg.payload.itemId] = status;\n\n// Store the updated status array back in the flow context\nflow.set(setVarId, varStatus);\n\n// Return the original message if the status is \"Accepted\", otherwise return null\nreturn (status == \"Accepted\") ? msg : null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 820,
+        "wires": [
+            [
+                "ece7bb78cdcb41ae"
+            ]
+        ]
+    },
+    {
+        "id": "ece7bb78cdcb41ae",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "name": "Decode for OPC UA",
+        "func": "var varName = msg.payload.variable;\nvar opcuaNodeID = \"ns=7;s=\" + varName;\nvar rawValue = msg.payload.value;\nvar dataType;\nvar value;\n\n// Check if the rawValue is a number, \"true\" or \"false\"\nif (!isNaN(rawValue)) {\n    // Convert to integer if rawValue is a number\n    value = parseInt(rawValue, 10);\n    dataType = \"Int32\";\n} else if (rawValue.toLowerCase() === \"true\") {\n    // Convert to boolean true if rawValue is \"true\"\n    value = true;\n    dataType = \"Boolean\";\n} else if (rawValue.toLowerCase() === \"false\") {\n    // Convert to boolean false if rawValue is \"false\"\n    value = false;\n    dataType = \"Boolean\";\n} else {\n    // Handle unexpected cases (optional)\n    node.error(\"Unexpected value: \" + rawValue, msg);\n    return null;\n}\nvar opcuaMsg = {\n    \"topic\": opcuaNodeID, \n    \"payload\": value, \n    \"datatype\": dataType\n}\n\n// Return the modified message\nmsg = opcuaMsg;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 820,
+        "wires": [
+            [
+                "3825b39eb017c98f"
+            ]
+        ]
+    },
+    {
+        "id": "3825b39eb017c98f",
+        "type": "OpcUa-Client",
+        "z": "c92713e1582bbb33",
+        "g": "bbf052edb9e01dad",
+        "endpoint": "862bd909ecdf60fb",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "OPC WRITE",
+        "x": 1550,
+        "y": 820,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f0dde1f50cf08a7f",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "61d35eb3b4e3e522",
+        "name": "Get from Flow",
+        "func": "// Initialize an empty array to store the results\nlet retArray = [];\n\n// Loop through each item in the incoming varArray\nmsg.payload.varArray.forEach(function(varItem) {\n    \n    // Determine the attribute type; default to \"Actual\" if not specified\n    let varType = (varItem.hasOwnProperty(\"attributeType\")) ? varItem.attributeType : \"Actual\";\n    \n    // Extract the variable name from the current item\n    let item = varItem.variable.name;  \n    \n    // Retrieve the value of the variable from the flow context; default to null if not found\n    let value = flow.get(item) || null;\n    \n    // If the value is found in the flow context, create an \"Accepted\" response\n    if (value) {\n        retArray.push(\n            {\n                attributeStatus: \"Accepted\",         // Status indicating the attribute was successfully retrieved\n                attributeType: varType,            // The type of the attribute\n                component: {\n                    name: varItem.component.name    // Name of the component\n                },\n                variable: {\n                    name: varItem.variable.name     // Name of the variable\n                },\n                attributeValue: value              // The retrieved value of the variable\n            }\n        )\n    }\n    // If the value is not found, create an \"UnknownComponent\" response\n    else {\n        retArray.push(\n            {\n                attributeStatus: \"UnknownComponent\", // Status indicating the component is unknown\n                attributeType: varType,              // The type of the attribute\n                component: {\n                    name: varItem.component.name     // Name of the component\n                },\n                variable: {\n                    name: varItem.variable.name      // Name of the variable\n                }\n            }\n        )\n    }\n    \n});\n\n// Prepare the payload for the response\nmsg.payload.data = {};\n// Assign the array of results to the getVariableResult field in the payload\nmsg.payload.data.getVariableResult = retArray;\n\n// Return the modified message to continue in the flow\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 640,
+        "wires": [
+            [
+                "4b21a0b31f2042bd"
+            ]
+        ]
+    },
+    {
+        "id": "37e1b293a9980d98",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "61d35eb3b4e3e522",
+        "name": "GetVariables",
+        "func": "let getVarArray = RED.util.cloneMessage(msg.payload.data.getVariableData);\n\nmsg.payload.varArray = getVarArray;\n\nmsg.payload.msgType = 3;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 640,
+        "wires": [
+            [
+                "f0dde1f50cf08a7f"
+            ]
+        ]
+    },
+    {
+        "id": "4b21a0b31f2042bd",
+        "type": "link out",
+        "z": "c92713e1582bbb33",
+        "g": "61d35eb3b4e3e522",
+        "name": "GetVariables out",
+        "mode": "link",
+        "links": [
+            "3fcbba68bb81cfd5"
+        ],
+        "x": 1315,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4170e27612684cde",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "a9f9c196e86bd4f0",
+        "name": "Store OCPP variables",
+        "func": "// Extract var_name by removing the prefix \"ns=7;s=\" from msg.topic\nlet var_name = msg.topic.replace(\"ns=7;s=\", \"\");\n\n// Extract var_value from msg.payload.value.value and convert it to a string\nlet var_value = String(msg.payload.value.value);\n\n// Set the flow context with var_name as the key and var_value as the value\nflow.set(var_name, var_value);\n\n// Create a new message object with var_name and var_value\nlet newMsg = {\n    var_name: var_name,\n    var_value: var_value\n};\n\n// Return the new message object\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e85edb7a24caf34b",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "689b61a15ded4790",
+        "name": "Decode and set definitions",
+        "func": "// Define the data type mappings\nvar dataTypeMappings = {\n    1: \"Boolean\",\n    3: \"Int16\", // Byte\n    4: \"Int16\",\n    5: \"Int16\", // UInt16\n    6: \"Int32\",\n    7: \"Int32\", // Uint32\n    10: \"Float\",\n    12: \"String\"\n    // ... Add more mappings as needed\n};\n\n// Transform the topic path\nvar path = msg.topic.replace(/ns=\\d+;s=|_/g, \"/\").replace(/^\\//, \"\");\n\n// Check if msg.payload exists and if it has a value property\nif (msg.payload && msg.payload.value !== undefined) {\n    //var value = msg.payload.value.value;\n    var numericDataType = msg.payload.value.dataType;\n    var dataTypeString = dataTypeMappings[numericDataType];\n    flow.set('set_payload_check', true);\n\n    // Create a new object with the desired structure\n    var newValues = {\n        \"path\": path,\n        \"dataType\": dataTypeString\n    };\n    \n    // Check if the context variable exists, and initialize it if not\n    if (!flow.get('definitions')) {\n        flow.set('definitions', {});\n    }\n\n    // Get the current object of stored values\n    var storedDefinitions = flow.get('definitions');\n\n    // Update the stored object with the new nested key and dataType\n    var nestedKey = newValues.path;\n    var dataType = newValues.dataType;\n    storedDefinitions[nestedKey] = { dataType: dataType };\n\n    // Update the context with the updated object of values\n    flow.set('definitions', storedDefinitions);\n\n    // Set the updated definitions as the new payload\n    //msg.payload = flow.get('definitions');\n    var definitions = flow.get('definitions');\n    msg = {\"definition\": definitions};\n} else {\n    flow.set('set_payload_check', false);\n    // Handle the case where payload or payload.value is undefined\n}\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 200,
+        "wires": [
+            [
+                "0dbc3aa6500ee875"
+            ]
+        ]
+    },
+    {
+        "id": "0dbc3aa6500ee875",
+        "type": "switch",
+        "z": "c92713e1582bbb33",
+        "g": "689b61a15ded4790",
+        "name": "Payload check",
+        "property": "set_payload_check",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1380,
+        "y": 200,
+        "wires": [
+            [
+                "5333278a79f0deb9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "42e840016788e4df",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "bd770928fc61761c",
+        "name": "Convert to Sparkplug Metrics",
+        "func": "// Extract topic and value from input\nvar topic = msg.topic.replace(/ns=\\d+;s=|_/g, \"/\").replace(/^\\//, \"\");\n\n// Check if msg.payload exists and if it has a value property\nif (msg.payload && msg.payload.value !== undefined) {\n    var value = msg.payload.value.value;\n    flow.set('sub_payload_check', true);\n\n    msg.payload = {\n        \"metrics\": [\n            {\n                \"name\": topic,\n                \"value\": value\n            }\n        ]\n    };\n} else {\n    flow.set('sub_payload_check', false);\n    // Handle the case where payload or payload.value is undefined\n    msg.payload = {\n        \"error\": \"Payload or payload value is undefined\"\n    };\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 440,
+        "wires": [
+            [
+                "eb569a6a2097fc8e"
+            ]
+        ]
+    },
+    {
+        "id": "eb569a6a2097fc8e",
+        "type": "switch",
+        "z": "c92713e1582bbb33",
+        "g": "bd770928fc61761c",
+        "name": "Payload check",
+        "property": "sub_payload_check",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1380,
+        "y": 440,
+        "wires": [
+            [
+                "5333278a79f0deb9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5333278a79f0deb9",
+        "type": "mqtt sparkplug device",
+        "z": "c92713e1582bbb33",
+        "g": "a9e606ed69b38035",
+        "name": "My Device",
+        "metrics": {},
+        "broker": "0d831bd9ba588536",
+        "birthImmediately": false,
+        "bufferDevice": false,
+        "x": 1570,
+        "y": 320,
+        "wires": [
+            [
+                "c4c03b71f1d575d3"
+            ]
+        ]
+    },
+    {
+        "id": "c4c03b71f1d575d3",
+        "type": "function",
+        "z": "c92713e1582bbb33",
+        "g": "015c9c09b69eb0d1",
+        "name": "Decode for OPC UA",
+        "func": "var topic = msg.payload.metrics[0].name;\nvar opcNodeId = \"ns=7;s=\" + topic.replace(/\\//g, '_');\nvar value = msg.payload.metrics[0].value;\nvar dataType = msg.payload.metrics[0].type;\n\nvar newObject = {\n    \"topic\": opcNodeId,\n    \"payload\": value,\n    \"datatype\": dataType\n};\n\n//msg = { \"topic\": opcPath, \"payload\": value, \"datatype\": dataType };\nmsg = newObject;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 320,
+        "wires": [
+            [
+                "d152235f5bd3fd6b"
+            ]
+        ]
+    },
+    {
+        "id": "d152235f5bd3fd6b",
+        "type": "OpcUa-Client",
+        "z": "c92713e1582bbb33",
+        "g": "015c9c09b69eb0d1",
+        "endpoint": "862bd909ecdf60fb",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "OPC WRITE",
+        "x": 1810,
+        "y": 360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "862bd909ecdf60fb",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://VicLun:53530/OPCUA/SimulationServer",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "23d726e457d80462",
+        "type": "target-csms",
+        "name": "CSMS:8844",
+        "url": "ws://localhost:8844/ocpp2"
+    },
+    {
+        "id": "0d831bd9ba588536",
+        "type": "mqtt-sparkplug-broker",
+        "name": "Ignition - Local Host",
+        "deviceGroup": "Master",
+        "eonName": "OPCUA_2_MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "enableStoreForward": false,
+        "compressAlgorithm": "",
+        "aliasMetrics": false,
+        "manualEoNBirth": false,
+        "primaryScada": ""
+    }
+]

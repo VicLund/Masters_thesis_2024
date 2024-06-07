@@ -1,0 +1,2136 @@
+[
+    {
+        "id": "60722f42dd6da1fe",
+        "type": "tab",
+        "label": "CSMS - dashboard",
+        "disabled": false,
+        "info": "Dashboard for testing the OPC UA \r\nto/from OCPP system functionality",
+        "env": []
+    },
+    {
+        "id": "4289fb88d671e2b5",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "Visualizing data",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#9363b7"
+        },
+        "nodes": [
+            "01589aef2e1d8a1b",
+            "bd00376fc172ed3b",
+            "91d13f154cc765c5",
+            "bbba6493130ad3ae",
+            "dcfe08a73ab70948",
+            "78332ccfed1c3ce9",
+            "d74a0f94e3ca0fc8",
+            "3c599ad95475c97c",
+            "8c99862bf8299eb3",
+            "0595e0cdfda9a911",
+            "53fa447e5aa909e2",
+            "ee51483cfedf9a63",
+            "55dfcdb0d54a17a0",
+            "d277ad9a3ef8b297",
+            "c8211364c214e90c",
+            "25578b43aeaa50dc",
+            "fb7dc927725c0878",
+            "f23c1f77df6464fb",
+            "b15d0aea959b9f6d"
+        ],
+        "x": 324,
+        "y": 933,
+        "w": 1282,
+        "h": 568
+    },
+    {
+        "id": "e73ce13b5b434abc",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "CSMS",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#3f93cf"
+        },
+        "nodes": [
+            "a7ea6153dadd1b3b",
+            "8d3de412f3b8c5e0",
+            "b5aa69c3f2023c93",
+            "6de22c3e0db56d24",
+            "8b7bb1ae9ff4708a",
+            "21aac910eb34de58"
+        ],
+        "x": 1054,
+        "y": 199,
+        "w": 532,
+        "h": 202
+    },
+    {
+        "id": "7ff5e97bd1ad5d1d",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "Get variables",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#addb7b"
+        },
+        "nodes": [
+            "2b4190e4d6ed029b",
+            "b0de857277dbecbd",
+            "b6cce13a7f3f1e48",
+            "220222d92bebe428",
+            "69ebaa47f019483d",
+            "12565d65b097898d",
+            "db53077981cb5c2e"
+        ],
+        "x": 214,
+        "y": 639,
+        "w": 612,
+        "h": 202
+    },
+    {
+        "id": "1f442432d2a9d427",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "Choosing variables to 'Get'",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#92d04f"
+        },
+        "nodes": [
+            "4685af0aeed08ee0",
+            "319580c8aa585bfd",
+            "34e46104c18251a5",
+            "56cfc3e404e8ae5e",
+            "e67a23baad9df1b3",
+            "090d7a20e22f9b98",
+            "73ab6e2021251d9c",
+            "d7256d929cf47a40",
+            "842494c448321e60",
+            "7913f59cb6a24f66",
+            "2841090563b13cc0",
+            "859c99037e2a4101",
+            "f823af3f7e4058ea",
+            "e1fe9991ba5bd670",
+            "8414f936400e4673",
+            "b087681009ec5975",
+            "47965f36275c076c",
+            "b9a08d061d2aa2c6",
+            "5d7f080c1576dcb9",
+            "51e00104f97cea27",
+            "bacaca6100b59c59",
+            "5aa2ec566d3d7d4a",
+            "7c964260aad9c742"
+        ],
+        "x": 1054,
+        "y": 419,
+        "w": 712,
+        "h": 482
+    },
+    {
+        "id": "c1814c6f2dcc0155",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "Set variables",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#ff3f3f"
+        },
+        "nodes": [
+            "8f15eab61af7dcb2",
+            "e447fd4b80e0a24d",
+            "8033e42790d91cb8",
+            "16742535f2692f17"
+        ],
+        "x": 214,
+        "y": 199,
+        "w": 542,
+        "h": 122
+    },
+    {
+        "id": "7d9b8d496a89e63f",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "name": "Setting variables",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000",
+            "stroke": "#ff3f3f"
+        },
+        "nodes": [
+            "61f41b19ebf34640",
+            "d7f690cc5d356c2c",
+            "ded849f03734a75f",
+            "ef1037296ebec471",
+            "21e69a593517fa78",
+            "1c8cc11ff9863808",
+            "b83bd9f59c2d8c7f",
+            "69ca2be09608e78c",
+            "3039b535c72d3689",
+            "e1986f6485025173",
+            "b7cbca0cff7191aa",
+            "6b6d36bd39aa244e",
+            "4c2a2dff238932d1"
+        ],
+        "x": 214,
+        "y": 339,
+        "w": 812,
+        "h": 282
+    },
+    {
+        "id": "b15d0aea959b9f6d",
+        "type": "group",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Title widgets",
+        "style": {
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "493599896d0dbb7d",
+            "6e6988e22108b5cc",
+            "6d300c86d0e3d8e6"
+        ],
+        "x": 1394,
+        "y": 959,
+        "w": 172,
+        "h": 162
+    },
+    {
+        "id": "a7ea6153dadd1b3b",
+        "type": "CSMS",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "CSMS",
+        "port": "8844",
+        "path": "/ocpp2",
+        "ocpp_logging": false,
+        "outputs": 2,
+        "x": 1410,
+        "y": 300,
+        "wires": [
+            [
+                "8b7bb1ae9ff4708a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8d3de412f3b8c5e0",
+        "type": "inject",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "Get Multi Variables",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\":\"GetVariables\",\"cbId\":\"Sta1\",\"data\":{\"getVariableData\":[{\"attributeType\":\"Actual\",\"component\":{\"name\":\"OCPPCommCtrlr\"},\"variable\":{\"name\":\"CCS1_ChargingPower\"}},{\"attributeType\":\"Actual\",\"component\":{\"name\":\"OCPPCommCtrlr\"},\"variable\":{\"name\":\"CCS2_ChargingPower\"}}]}}",
+        "payloadType": "json",
+        "x": 1190,
+        "y": 240,
+        "wires": [
+            [
+                "a7ea6153dadd1b3b"
+            ]
+        ]
+    },
+    {
+        "id": "b5aa69c3f2023c93",
+        "type": "inject",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "Set Multi Variable",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\":\"SetVariables\",\"cbId\":\"Sta1\",\"data\":{\"setVariableData\":[{\"attributeValue\":\"true\",\"component\":{\"name\":\"OCPPCommCtrlr\"},\"variable\":{\"name\":\"Battery_W-Restart\"}},{\"attributeValue\":\"true\",\"component\":{\"name\":\"AuthCtrlr\"},\"variable\":{\"name\":\"CCS1_W-RemoteStop\"}},{\"attributeValue\":\"25\",\"component\":{\"name\":\"AuthCtrlr\"},\"variable\":{\"name\":\"CCS2_W-Voltage\"}}]}}",
+        "payloadType": "json",
+        "x": 1200,
+        "y": 280,
+        "wires": [
+            [
+                "a7ea6153dadd1b3b"
+            ]
+        ]
+    },
+    {
+        "id": "2b4190e4d6ed029b",
+        "type": "ui-button",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "group": "cbd3166407b7bec8",
+        "name": "Get variables",
+        "label": "Get Variables",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "220222d92bebe428",
+                "b6cce13a7f3f1e48"
+            ]
+        ]
+    },
+    {
+        "id": "4685af0aeed08ee0",
+        "type": "link in",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Clear buttons in",
+        "links": [
+            "b0de857277dbecbd"
+        ],
+        "x": 1095,
+        "y": 660,
+        "wires": [
+            [
+                "319580c8aa585bfd",
+                "34e46104c18251a5",
+                "56cfc3e404e8ae5e",
+                "e67a23baad9df1b3",
+                "090d7a20e22f9b98",
+                "73ab6e2021251d9c",
+                "d7256d929cf47a40",
+                "842494c448321e60",
+                "7913f59cb6a24f66",
+                "2841090563b13cc0",
+                "859c99037e2a4101"
+            ]
+        ]
+    },
+    {
+        "id": "b0de857277dbecbd",
+        "type": "link out",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "Clear buttons out",
+        "mode": "link",
+        "links": [
+            "4685af0aeed08ee0"
+        ],
+        "x": 785,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "319580c8aa585bfd",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Current Temp",
+        "label": "Battery - Current Temp",
+        "group": "cbd3166407b7bec8",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1360,
+        "y": 460,
+        "wires": [
+            [
+                "f823af3f7e4058ea"
+            ]
+        ]
+    },
+    {
+        "id": "b6cce13a7f3f1e48",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "Clear switches",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 720,
+        "wires": [
+            [
+                "b0de857277dbecbd",
+                "69ebaa47f019483d"
+            ]
+        ]
+    },
+    {
+        "id": "34e46104c18251a5",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Max Temp",
+        "label": "Battery - Max Temp",
+        "group": "cbd3166407b7bec8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1340,
+        "y": 500,
+        "wires": [
+            [
+                "e1fe9991ba5bd670"
+            ]
+        ]
+    },
+    {
+        "id": "56cfc3e404e8ae5e",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "W.Restart",
+        "label": "Battery - W.Restart",
+        "group": "cbd3166407b7bec8",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1340,
+        "y": 540,
+        "wires": [
+            [
+                "8414f936400e4673"
+            ]
+        ]
+    },
+    {
+        "id": "e67a23baad9df1b3",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS1 - Charging Power",
+        "label": "CCS1 - Charging Power",
+        "group": "cbd3166407b7bec8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1390,
+        "y": 580,
+        "wires": [
+            [
+                "b087681009ec5975"
+            ]
+        ]
+    },
+    {
+        "id": "090d7a20e22f9b98",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS1 - Connection Status",
+        "label": "CCS1 - Connection Status",
+        "group": "cbd3166407b7bec8",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1400,
+        "y": 620,
+        "wires": [
+            [
+                "47965f36275c076c"
+            ]
+        ]
+    },
+    {
+        "id": "73ab6e2021251d9c",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS1 - W.Remote Stop",
+        "label": "CCS1 - W.Remote Stop",
+        "group": "cbd3166407b7bec8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1390,
+        "y": 660,
+        "wires": [
+            [
+                "b9a08d061d2aa2c6"
+            ]
+        ]
+    },
+    {
+        "id": "d7256d929cf47a40",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS1 - W.Voltage",
+        "label": "CCS1 - W.Voltage",
+        "group": "cbd3166407b7bec8",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1370,
+        "y": 700,
+        "wires": [
+            [
+                "5d7f080c1576dcb9"
+            ]
+        ]
+    },
+    {
+        "id": "842494c448321e60",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS2 - Charging Power",
+        "label": "CCS2 - Charging Power",
+        "group": "cbd3166407b7bec8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1390,
+        "y": 740,
+        "wires": [
+            [
+                "51e00104f97cea27"
+            ]
+        ]
+    },
+    {
+        "id": "7913f59cb6a24f66",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS2 - Connection Status",
+        "label": "CCS2 - Connection Status",
+        "group": "cbd3166407b7bec8",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1400,
+        "y": 780,
+        "wires": [
+            [
+                "bacaca6100b59c59"
+            ]
+        ]
+    },
+    {
+        "id": "2841090563b13cc0",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS2 - W.Remote Stop",
+        "label": "CCS2 - W.Remote Stop",
+        "group": "cbd3166407b7bec8",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1390,
+        "y": 820,
+        "wires": [
+            [
+                "5aa2ec566d3d7d4a"
+            ]
+        ]
+    },
+    {
+        "id": "859c99037e2a4101",
+        "type": "ui-switch",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "CCS2 - W.Voltage",
+        "label": "CCS2 - W.Voltage",
+        "group": "cbd3166407b7bec8",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1370,
+        "y": 860,
+        "wires": [
+            [
+                "7c964260aad9c742"
+            ]
+        ]
+    },
+    {
+        "id": "f823af3f7e4058ea",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"Battery_CurrentTemp\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[0] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1fe9991ba5bd670",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"Battery_MaxTemp\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[1] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8414f936400e4673",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"Battery_W-Restart\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[2] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b087681009ec5975",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_ChargingPower\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[3] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47965f36275c076c",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_ConnectionStatus\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[4] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9a08d061d2aa2c6",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_W-RemoteStop\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[5] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d7f080c1576dcb9",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_W-Voltage\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[6] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51e00104f97cea27",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_ChargingPower\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[7] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bacaca6100b59c59",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_ConnectionStatus\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[8] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5aa2ec566d3d7d4a",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_W-RemoteStop\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[9] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c964260aad9c742",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "1f442432d2a9d427",
+        "name": "Set 'getVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('getVariables')) {\n    flow.set('getVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_W-Voltage\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('getVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[10] = { varName: variable, chosen: payload };\n\n// Update the context with the updated object of values\nflow.set('getVariables', storedValues);\n\n// You can use the storedValues object further or pass it to the next nodes\n/*msg.payload = flow.get('getVariables');\n\nreturn msg;*/\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "220222d92bebe428",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "Send 'getVariables' request",
+        "func": "// Retrieve 'getVariables' from the flow context\nlet getVariables = flow.get('getVariables');\n\n// Check if 'getVariables' is an object\nif (typeof getVariables !== 'object' || getVariables === null) {\n    node.error(\"The 'getVariables' context variable is not an object.\", msg);\n    return null;\n}\n\n// Initialize an empty array for 'getVariableData'\nlet getVariableData = [];\n\n// Iterate through each key in the 'getVariables' object\nfor (let key in getVariables) {\n    if (getVariables.hasOwnProperty(key)) {\n        let variable = getVariables[key];\n        // Check if 'chosen' is true\n        if (variable.chosen) {\n            // Create a new entry object\n            let entry = {\n                \"attributeType\": \"Actual\",\n                \"component\": {\n                    \"name\": \"OCPPCommCtrlr\"\n                },\n                \"variable\": {\n                    \"name\": variable.varName\n                }\n            };\n            // Add the entry object to the 'getVariableData' array\n            getVariableData.push(entry);\n        }\n    }\n}\n\n// Check if 'getVariableData' is not empty\nif (getVariableData.length > 0) {\n    // Construct the final OCPP 'GetVariables' structure\n    let ocppGetVariables = {\n        \"command\": \"GetVariables\",\n        \"cbId\": \"Sta1\",\n        \"data\": {\n            \"getVariableData\": getVariableData\n        }\n    };\n    // Set the 'msg.payload' to the final structure\n    msg.payload = ocppGetVariables;\n    flow.set('get_set', \"get\");\n} else {\n    // If 'getVariableData' is empty, set 'msg.payload' to null or appropriate value\n    msg.payload = null;\n}\n\n// Return the 'msg'\nreturn msg;\n\n\n/*\nmsg.payload = flow.get('getVariables');\nreturn msg;*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 680,
+        "wires": [
+            [
+                "db53077981cb5c2e"
+            ]
+        ]
+    },
+    {
+        "id": "69ebaa47f019483d",
+        "type": "delay",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 760,
+        "wires": [
+            [
+                "12565d65b097898d"
+            ]
+        ]
+    },
+    {
+        "id": "12565d65b097898d",
+        "type": "change",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "getVariables[\"0\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"1\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"2\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"3\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"4\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"5\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"6\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"7\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"8\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"9\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "getVariables[\"10\"].chosen",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db53077981cb5c2e",
+        "type": "link out",
+        "z": "60722f42dd6da1fe",
+        "g": "7ff5e97bd1ad5d1d",
+        "name": "CSMS - GetVariables out",
+        "mode": "link",
+        "links": [
+            "6de22c3e0db56d24"
+        ],
+        "x": 785,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6de22c3e0db56d24",
+        "type": "link in",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "CSMS - GetVariables in",
+        "links": [
+            "db53077981cb5c2e"
+        ],
+        "x": 1265,
+        "y": 320,
+        "wires": [
+            [
+                "a7ea6153dadd1b3b"
+            ]
+        ]
+    },
+    {
+        "id": "01589aef2e1d8a1b",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Current Temp",
+        "label": "Current Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1160,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "bd00376fc172ed3b",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Store Get Data",
+        "func": "// Extract 'getVariableResult' from 'msg.payload.data'\nlet getVariableResult = msg.payload.data.getVariableResult;\n\n// Initialize an empty object to store results\nlet getVar_result = {};\n\n// Iterate through each element in 'getVariableResult'\ngetVariableResult.forEach(variable => {\n    // Use 'variable.name' as the key and store 'attributeValue' under \"result\"\n    getVar_result[variable.variable.name] = { \"result\": variable.attributeValue };\n});\n\n// Save the object to the flow context under 'getVar_result'\nflow.set('requestVar_result', getVar_result);\n\nmsg.payload = flow.get('requestVar_result');\n\n// Return the 'msg'\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1200,
+        "wires": [
+            [
+                "91d13f154cc765c5"
+            ]
+        ]
+    },
+    {
+        "id": "91d13f154cc765c5",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Sort and Present Data",
+        "func": "// Retrieve 'requestVar_result' from the flow context\nlet getVar_result = flow.get('requestVar_result') || {};\n\n// Initialize an array with 11 null elements\nlet outputs = new Array(11).fill(null);\n\n// Iterate through each key-value pair in 'requestVar_result'\nfor (let key in getVar_result) {\n    if (getVar_result.hasOwnProperty(key)) {\n        let value = getVar_result[key].result;\n        // Use a switch statement to match each key\n        switch (key) {\n            case \"Battery_CurrentTemp\":\n                const roundedValue = Math.round(value * 100) / 100; // Round to 2 decimal places\n                outputs[0] = { payload: roundedValue };\n                break;\n            case \"Battery_MaxTemp\":\n                outputs[1] = { payload: value };\n                break;\n            case \"Battery_W-Restart\":\n                outputs[2] = { payload: value };\n                break;\n            case \"CCS1_ChargingPower\":\n                outputs[3] = { payload: value };\n                break;\n            case \"CCS1_ConnectionStatus\":\n                outputs[4] = { payload: value };\n                break;\n            case \"CCS1_W-RemoteStop\":\n                outputs[5] = { payload: value };\n                break;\n            case \"CCS1_W-Voltage\":\n                outputs[6] = { payload: value };\n                break;\n            case \"CCS2_ChargingPower\":\n                outputs[7] = { payload: value };\n                break;\n            case \"CCS2_ConnectionStatus\":\n                outputs[8] = { payload: value };\n                break;\n            case \"CCS2_W-RemoteStop\":\n                outputs[9] = { payload: value };\n                break;\n            case \"CCS2_W-Voltage\":\n                outputs[10] = { payload: value };\n                break;\n            default:\n                // If the key doesn't match any case, do nothing\n                break;\n        }\n    }\n}\n\n// Send the output array\nnode.send(outputs);\n",
+        "outputs": 11,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1240,
+        "wires": [
+            [
+                "01589aef2e1d8a1b"
+            ],
+            [
+                "bbba6493130ad3ae"
+            ],
+            [
+                "d74a0f94e3ca0fc8"
+            ],
+            [
+                "3c599ad95475c97c"
+            ],
+            [
+                "dcfe08a73ab70948"
+            ],
+            [
+                "0595e0cdfda9a911"
+            ],
+            [
+                "53fa447e5aa909e2"
+            ],
+            [
+                "ee51483cfedf9a63"
+            ],
+            [
+                "25578b43aeaa50dc"
+            ],
+            [
+                "d277ad9a3ef8b297"
+            ],
+            [
+                "c8211364c214e90c"
+            ]
+        ]
+    },
+    {
+        "id": "bbba6493130ad3ae",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Max Temp",
+        "label": "Max Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1140,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "dcfe08a73ab70948",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Connection Status States",
+        "func": "// Assume msg is the input object containing payload\nvar value = parseInt(msg.payload);\n\n// Switch-case statement to check the value\nswitch (value) {\n    case 1:\n        msg.payload = \"Available\";\n        break;\n    case 2:\n        msg.payload = \"Preparing\";\n        break;\n    case 3:\n        msg.payload = \"Charging\";\n        break;\n    case 4:\n        msg.payload = \"SuspendedEVSE\";\n        break;\n    case 5:\n        msg.payload = \"SuspendedEV\";\n        break;\n    case 6:\n        msg.payload = \"Finishing\";\n        break;\n    case 7:\n        msg.payload = \"Reserved\";\n        break;\n    case 8:\n        msg.payload = \"Unavailable\";\n        break;\n    case 9:\n        msg.payload = \"Faulted\";\n        break;\n    default:\n        msg.payload = \"Error reading status\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 1200,
+        "wires": [
+            [
+                "8c99862bf8299eb3"
+            ]
+        ]
+    },
+    {
+        "id": "78332ccfed1c3ce9",
+        "type": "link in",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "CSMS Data in",
+        "links": [
+            "8b7bb1ae9ff4708a"
+        ],
+        "x": 365,
+        "y": 1240,
+        "wires": [
+            [
+                "f23c1f77df6464fb"
+            ]
+        ]
+    },
+    {
+        "id": "8b7bb1ae9ff4708a",
+        "type": "link out",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "CSMS data out",
+        "mode": "link",
+        "links": [
+            "78332ccfed1c3ce9"
+        ],
+        "x": 1545,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d74a0f94e3ca0fc8",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "W.Restart",
+        "label": "W.Restart",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1140,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "3c599ad95475c97c",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "CCS1 - Charging Power",
+        "label": "Charging Power",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1190,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "8c99862bf8299eb3",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "CCS1 - Connection Status",
+        "label": "Connection Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1460,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "0595e0cdfda9a911",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "CCS1 - W.RemoteStop",
+        "label": "W.RemoteStop",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1190,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "53fa447e5aa909e2",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "CCS1 - W.Voltage",
+        "label": "W.Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1170,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ee51483cfedf9a63",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "CCS2 - Charging Power",
+        "label": "Charging Power",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1190,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "55dfcdb0d54a17a0",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "CCS2 - Connection Status",
+        "label": "Connection Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1460,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "d277ad9a3ef8b297",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "CCS2 - W.RemoteStop",
+        "label": "W.RemoteStop",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1190,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "c8211364c214e90c",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "group": "51e0a0c8d996eba7",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "name": "CCS2 - W.Voltage",
+        "label": "W.Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1170,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "25578b43aeaa50dc",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Connection Status States",
+        "func": "// Assume msg is the input object containing payload\nvar value = parseInt(msg.payload);\n\n// Switch-case statement to check the value\nswitch (value) {\n    case 1:\n        msg.payload = \"Available\";\n        break;\n    case 2:\n        msg.payload = \"Preparing\";\n        break;\n    case 3:\n        msg.payload = \"Charging\";\n        break;\n    case 4:\n        msg.payload = \"SuspendedEVSE\";\n        break;\n    case 5:\n        msg.payload = \"SuspendedEV\";\n        break;\n    case 6:\n        msg.payload = \"Finishing\";\n        break;\n    case 7:\n        msg.payload = \"Reserved\";\n        break;\n    case 8:\n        msg.payload = \"Unavailable\";\n        break;\n    case 9:\n        msg.payload = \"Faulted\";\n        break;\n    default:\n        msg.payload = \"Error reading status\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 1380,
+        "wires": [
+            [
+                "55dfcdb0d54a17a0"
+            ]
+        ]
+    },
+    {
+        "id": "6e6988e22108b5cc",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "b15d0aea959b9f6d",
+        "group": "51e0a0c8d996eba7",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "CCS1:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": "18",
+        "color": "#000000",
+        "className": "",
+        "x": 1470,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "493599896d0dbb7d",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "b15d0aea959b9f6d",
+        "group": "51e0a0c8d996eba7",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "CCS2:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": "18",
+        "color": "#000000",
+        "className": "",
+        "x": 1470,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "6d300c86d0e3d8e6",
+        "type": "ui-text",
+        "z": "60722f42dd6da1fe",
+        "g": "b15d0aea959b9f6d",
+        "group": "51e0a0c8d996eba7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Battery:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": "18",
+        "color": "#000000",
+        "className": "",
+        "x": 1480,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "61f41b19ebf34640",
+        "type": "ui-text-input",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "group": "589de9fa9245c934",
+        "name": "CCS1 - W.Voltage",
+        "label": "CCS1 - W.Voltage",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 650,
+        "y": 480,
+        "wires": [
+            [
+                "69ca2be09608e78c"
+            ]
+        ]
+    },
+    {
+        "id": "d7f690cc5d356c2c",
+        "type": "ui-dropdown",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "group": "589de9fa9245c934",
+        "name": "Battery - W.Restart",
+        "label": "Battery - W.Restart - Select Option:",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "True",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "label": "False",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 380,
+        "wires": [
+            [
+                "1c8cc11ff9863808"
+            ]
+        ]
+    },
+    {
+        "id": "ded849f03734a75f",
+        "type": "ui-dropdown",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "group": "589de9fa9245c934",
+        "name": "CCS1 - W.Remote Stop",
+        "label": "CCS1 - W.Remote Stop - Select Option:",
+        "tooltip": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "True",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "label": "False",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 670,
+        "y": 440,
+        "wires": [
+            [
+                "b83bd9f59c2d8c7f"
+            ]
+        ]
+    },
+    {
+        "id": "ef1037296ebec471",
+        "type": "ui-dropdown",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "group": "589de9fa9245c934",
+        "name": "CCS2 - W.Remote Stop",
+        "label": "CCS2 - W.Remote Stop - Select Option:",
+        "tooltip": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "True",
+                "value": "true",
+                "type": "str"
+            },
+            {
+                "label": "False",
+                "value": "false",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "3039b535c72d3689"
+            ]
+        ]
+    },
+    {
+        "id": "21e69a593517fa78",
+        "type": "ui-text-input",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "group": "589de9fa9245c934",
+        "name": "CCS2 - W.Voltage",
+        "label": "CCS2 - W.Voltage",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "e1986f6485025173"
+            ]
+        ]
+    },
+    {
+        "id": "8f15eab61af7dcb2",
+        "type": "ui-button",
+        "z": "60722f42dd6da1fe",
+        "g": "c1814c6f2dcc0155",
+        "group": "589de9fa9245c934",
+        "name": "Set Variables",
+        "label": "Set Variables",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "e447fd4b80e0a24d",
+                "8033e42790d91cb8"
+            ]
+        ]
+    },
+    {
+        "id": "1c8cc11ff9863808",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Set 'setVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('setVariables')) {\n    flow.set('setVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"Battery_W-Restart\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('setVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[0] = { varName: variable, value: payload };\n\n// Update the context with the updated object of values\nflow.set('setVariables', storedValues);\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b83bd9f59c2d8c7f",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Set 'setVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('setVariables')) {\n    flow.set('setVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_W-RemoteStop\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('setVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[1] = { varName: variable, value: payload };\n\n// Update the context with the updated object of values\nflow.set('setVariables', storedValues);\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69ca2be09608e78c",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Set 'setVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('setVariables')) {\n    flow.set('setVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS1_W-Voltage\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('setVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[2] = { varName: variable, value: payload };\n\n// Update the context with the updated object of values\nflow.set('setVariables', storedValues);\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3039b535c72d3689",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Set 'setVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('setVariables')) {\n    flow.set('setVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_W-RemoteStop\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('setVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[3] = { varName: variable, value: payload };\n\n// Update the context with the updated object of values\nflow.set('setVariables', storedValues);\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1986f6485025173",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Set 'setVariables'",
+        "func": "// Check if the context variable exists, and initialize it if not\nif (!flow.get('setVariables')) {\n    flow.set('setVariables', {});\n}\n\nlet payload = msg.payload;\nlet variable = \"CCS2_W-Voltage\";\n\n// Get the current object of stored values\nvar storedValues = flow.get('setVariables');\n\n// Update the stored object with the new nested key and dataType\nstoredValues[4] = { varName: variable, value: payload };\n\n// Update the context with the updated object of values\nflow.set('setVariables', storedValues);\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e447fd4b80e0a24d",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "c1814c6f2dcc0155",
+        "name": "Send 'setVariables' request",
+        "func": "// Retrieve 'setVariables' from the flow context\nlet setVariables = flow.get('setVariables');\n\n// Check if 'setVariables' is an object\nif (typeof setVariables !== 'object' || setVariables === null) {\n    node.error(\"The 'setVariables' context variable is not an object.\", msg);\n    return null;\n}\n\n// Initialize an empty array for 'setVariableData'\nlet setVariableData = [];\n\n// Iterate through each key in the 'setVariables' object\nfor (let key in setVariables) {\n    if (setVariables.hasOwnProperty(key)) {\n        let variable = setVariables[key];\n\n        // Check if 'variable.value' is not empty\n        if (variable.value) {\n            // Create a new entry object\n            let entry = {\n                \"attributeValue\": variable.value,\n                \"component\": {\n                    \"name\": \"OCPPCommCtrlr\"\n                },\n                \"variable\": {\n                    \"name\": variable.varName\n                }\n            };\n            // Add the entry object to the 'setVariableData' array\n            setVariableData.push(entry);\n        }\n    }\n}\n\n// Check if 'setVariableData' is not empty\nif (setVariableData.length > 0) {\n    // Construct the final OCPP 'setVariables' structure\n    let ocppSetVariables = {\n        \"command\": \"SetVariables\",\n        \"cbId\": \"Sta1\",\n        \"data\": {\n            \"setVariableData\": setVariableData\n        }\n    };\n    // Set the 'msg.payload' to the final structure\n    msg.payload = ocppSetVariables;\n    flow.set('get_set', \"set\");\n} else {\n    // If 'setVariableData' is empty, set 'msg.payload' to null or appropriate value\n    msg.payload = null;\n}\n\n// Return the 'msg'\nreturn msg;\n\n\n/*msg.payload = flow.get('setVariables');\nreturn msg;*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "16742535f2692f17"
+            ]
+        ]
+    },
+    {
+        "id": "b7cbca0cff7191aa",
+        "type": "link in",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Clear selection in",
+        "links": [
+            "8033e42790d91cb8"
+        ],
+        "x": 255,
+        "y": 480,
+        "wires": [
+            [
+                "6b6d36bd39aa244e",
+                "4c2a2dff238932d1"
+            ]
+        ]
+    },
+    {
+        "id": "8033e42790d91cb8",
+        "type": "link out",
+        "z": "60722f42dd6da1fe",
+        "g": "c1814c6f2dcc0155",
+        "name": "Clear selection out",
+        "mode": "link",
+        "links": [
+            "b7cbca0cff7191aa"
+        ],
+        "x": 435,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6b6d36bd39aa244e",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Clear dropdown",
+        "func": "msg.payload = [];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "d7f690cc5d356c2c",
+                "ded849f03734a75f",
+                "ef1037296ebec471"
+            ]
+        ]
+    },
+    {
+        "id": "4c2a2dff238932d1",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "7d9b8d496a89e63f",
+        "name": "Clear text",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "61f41b19ebf34640",
+                "21e69a593517fa78"
+            ]
+        ]
+    },
+    {
+        "id": "16742535f2692f17",
+        "type": "link out",
+        "z": "60722f42dd6da1fe",
+        "g": "c1814c6f2dcc0155",
+        "name": "CSMS - SetVariables out",
+        "mode": "link",
+        "links": [
+            "21aac910eb34de58"
+        ],
+        "x": 715,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "21aac910eb34de58",
+        "type": "link in",
+        "z": "60722f42dd6da1fe",
+        "g": "e73ce13b5b434abc",
+        "name": "CSMS - SetVariables in",
+        "links": [
+            "16742535f2692f17"
+        ],
+        "x": 1265,
+        "y": 360,
+        "wires": [
+            [
+                "a7ea6153dadd1b3b"
+            ]
+        ]
+    },
+    {
+        "id": "fb7dc927725c0878",
+        "type": "function",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Store Set Data",
+        "func": "// Extract 'setVariableResult' from the incoming message's payload\nlet setVariableResult = msg.payload.data.setVariableResult;\n\n// Retrieve 'setVariables' from the flow context\nlet setVariables = flow.get('setVariables') || {};\n\n// Initialize an empty object for 'requestVar_result'\nlet requestVar_result = {};\n\n// Iterate through each element in 'setVariableResult'\nsetVariableResult.forEach(variableResult => {\n    // Extract 'variable.name' and 'attributeStatus'\n    let varName = variableResult.variable.name;\n    let attributeStatus = variableResult.attributeStatus;\n\n    // Find the corresponding entry in 'setVariables'\n    for (let key in setVariables) {\n        if (setVariables.hasOwnProperty(key)) {\n            if (setVariables[key].varName === varName) {\n                // Check if 'attributeStatus' is 'Accepted'\n                if (attributeStatus === \"Accepted\") {\n                    // Store 'variable.name' and 'value' in 'requestVar_result'\n                    requestVar_result[varName] = { \"result\": setVariables[key].value };\n                }\n            }\n        }\n    }\n});\n\n// Save 'requestVar_result' in the flow context\nflow.set('requestVar_result', requestVar_result);\n\nmsg.payload = flow.get('requestVar_result');\n\n// Return 'msg'\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1280,
+        "wires": [
+            [
+                "91d13f154cc765c5"
+            ]
+        ]
+    },
+    {
+        "id": "f23c1f77df6464fb",
+        "type": "switch",
+        "z": "60722f42dd6da1fe",
+        "g": "4289fb88d671e2b5",
+        "name": "Check Get or Set",
+        "property": "get_set",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "get",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 1240,
+        "wires": [
+            [
+                "bd00376fc172ed3b"
+            ],
+            [
+                "fb7dc927725c0878"
+            ]
+        ]
+    },
+    {
+        "id": "cbd3166407b7bec8",
+        "type": "ui-group",
+        "name": "Get Variables",
+        "page": "652ffb6f1aedde28",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "51e0a0c8d996eba7",
+        "type": "ui-group",
+        "name": "Data from Charging Station",
+        "page": "652ffb6f1aedde28",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "589de9fa9245c934",
+        "type": "ui-group",
+        "name": "Set Variables",
+        "page": "652ffb6f1aedde28",
+        "width": "4",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "652ffb6f1aedde28",
+        "type": "ui-page",
+        "name": "OCPP CSMS",
+        "ui": "47dc05dc09e99aff",
+        "path": "/ocpp_csms",
+        "icon": "ev-station",
+        "layout": "grid",
+        "theme": "468490c4e566de05",
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "47dc05dc09e99aff",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "468490c4e566de05",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#2181a6",
+            "primary": "#2181a6",
+            "bgPage": "#eeeeee",
+            "groupBg": "#eeeeee",
+            "groupOutline": "#000000"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
